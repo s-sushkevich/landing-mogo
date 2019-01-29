@@ -1,0 +1,990 @@
+.row{
+   font-size: 0;
+   margin: 0 -10px;
+}
+
+.col{
+   display: inline-block;
+   vertical-align: top;
+   font-size: 16px;
+   box-sizing: border-box;
+   padding: 0 10px;
+}
+
+.col_1{width: 8.33333333%;}
+.col_2{width: 16.66666667%;}
+.col_3{width: 25%;}
+.col_4{width: 33.33333333%;}
+.col_5{width: 41.66666667%;}
+.col_6{width: 50%;}
+.col_7{width: 58.33333333%;}
+.col_8{width: 66.66666667%;}
+.col_9{width: 75%;}
+.col_10{width: 83.33333333%;}
+.col_11{width: 91.66666667%;}
+.col_12{width: 100%;}
+
+.banner-sect {
+	background-image: url(../images/banner-sect/banner_bg_image.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	font-size: 0;
+	padding: 0 15px 105px;
+}
+
+.banner-sect .banner-cont {
+	padding: 25px 15px;
+}
+
+.banner-sect header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 170px;
+}
+
+.banner-sect header .logo span {
+	font: 700 30px/1 'Montserrat', sans-serif;
+	color: #ffffff;
+	cursor: pointer;
+	margin-right: 10px;
+	/*ВОПРОС! Почему он больше чем его родитель?*/
+}
+
+.banner-sect header .menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.banner-sect header .menu a:not(:first-child) {
+	margin-left: 54px;
+}
+
+.banner-sect header .menu span:hover:after {
+	content: "";
+	display: block;
+	width: 115%;
+	height: 3px;
+	border-radius: 1px;
+	position: absolute;
+	background-color: #fce38a;
+	margin-top: 14px;
+	top: 10px;
+	left: calc((100% - 100%/1.15)/-2);
+}
+
+.banner-sect header .menu span:hover {
+	color: #fce38a;
+}
+
+.banner-sect header .menu a span{
+	font: 500 14px/1 'Montserrat', sans-serif;
+	position: relative;
+}
+
+.banner-sect .title-box {
+	text-align: center;
+	margin-bottom: 157px;
+}
+
+.banner-sect .title-box h2 {
+	font: 72px/1 'Kaushan Script', cursive;
+	color: #ffffff;
+}
+
+.banner-sect .title-box h1 {
+	font: 700 150px/1 'Montserrat', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.banner-sect .title-box h1:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #fff;
+	margin: 52px auto;
+}
+
+.banner-sect .title-box .learn-more-butt {
+	display: inline-block;
+	border: 3px solid #fff;
+	width: 154px;
+	padding: 17px 0;
+	font: 700 14px/1 'Montserrat', sans-serif;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .25s;
+}
+
+.banner-sect .title-box .learn-more-butt:hover {
+	transform: scale(1.2);
+	color: #fff;
+	border-color: #f5a888;
+	background-color: hsla(38, 76%, 71%, 1);
+}
+
+.banner-sect .slider-item {
+	cursor: pointer;
+	opacity: .7;
+}
+
+.banner-sect .slider-item p {
+	font: 18px/1 'Montserrat', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.banner-sect .slider-item p span {
+	font: 700 24px/1 'Montserrat', sans-serif;
+	vertical-align: baseline;
+}
+
+.banner-sect .slider-item:before {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	margin-bottom: 15px;
+}
+
+.banner-sect .slider-item:hover {
+	opacity: 1;
+}
+
+.banner-sect .slider-item-1:hover:before {
+	background: rgb(243,129,129); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(243,129,129,1) 0%, rgba(243,129,129,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(243,129,129,1) 0%,rgba(243,129,129,1) 25%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(243,129,129,1) 0%,rgba(243,129,129,1) 25%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.banner-sect .slider-item-2:hover:before {
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(243,129,129,1) 25%, rgba(243,129,129,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(243,129,129,1) 25%,rgba(243,129,129,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(243,129,129,1) 25%,rgba(243,129,129,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.banner-sect .slider-item-3:hover:before {
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(243,129,129,1) 50%, rgba(243,129,129,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(243,129,129,1) 50%,rgba(243,129,129,1) 75%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(243,129,129,1) 50%,rgba(243,129,129,1) 75%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.banner-sect .slider-item-4:hover:before {
+ 	background: rgb(255,255,255); /* Old browsers */
+ 	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(243,129,129,1) 75%, rgba(243,129,129,1) 96%); /* FF3.6-15 */
+ 	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 75%,rgba(243,129,129,1) 75%,rgba(243,129,129,1) 96%); /* Chrome10-25,Safari5.1-6 */
+ 	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 75%,rgba(243,129,129,1) 75%,rgba(243,129,129,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f38181',GradientType=1 ); /* IE6-9 */
+ }
+
+.head-box {
+	text-align: center;
+	padding: 105px 124px 0;
+}
+
+.head-box h3 {
+	font: 24px/1 'Kaushan Script', cursive;
+	color: #333333;
+	margin-bottom: 16px;
+}
+
+.head-box h1 {
+	font: 700 30px/1 'Montserrat', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	padding-bottom: 38px;
+}
+
+.head-box h1:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 38px auto 0;
+}
+
+.head-box p {
+	font: 15px/1.6 'Roboto', sans-serif;
+	color: #999999;
+	padding-bottom: 100px;
+}
+
+.pict-box-item .pict-box-bg-elem {
+	position: absolute;
+	background-color: #95e1d3;
+	top: 0;
+}
+
+.pict-box-item .pict-box-elem {
+	position: relative;
+	margin: 0 auto;
+}
+
+.about-sect .pict-box-size {
+	max-height: 250px;
+	max-width: 380px;
+	width: 100%;
+	height: 100%;
+}
+
+.pict-box-item .pict-box-img-elem > img {
+	transition: all .3s;
+}
+
+.pict-box-item .pict-box-img-elem {
+	background: -moz-linear-gradient(top, rgba(243,129,129,0.9) 0%, rgba(252,227,138,0.9) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f38181', endColorstr='#e6fce38a',GradientType=0 ); /* IE6-9 */
+	transition: transform .3s;
+	z-index: 10;
+	cursor: pointer;
+	position: relative;
+}
+
+.pict-box-item .pict-box-img-elem:hover {
+	transform: translate(-10px, -10px);
+}
+
+.pict-box-item .pict-box-img-elem:hover .pict-box-text {
+	opacity: 1;
+}
+
+.pict-box-item .pict-box-img-elem:hover > img {
+	opacity: .08;
+}
+
+.pict-box-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: all .3s .15s;
+}
+
+.about-sect .pict-box-text h3 {
+	font: 700 18px/1 'Montserrat', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	padding-top: 8px;
+}
+
+.facts-sect {
+	background-color: #95e1d3;
+}
+
+.facts-sect .facts-cont {
+	padding: 0 15px;
+}
+
+.facts-sect .facts-item {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 20%;
+	border-left: 1px solid #b5eae0;
+	text-align: center;
+	padding: 82px 0;
+}
+
+.facts-sect .facts-item:last-of-type {
+	border-right: 1px solid #b5eae0;
+}
+
+.facts-sect .facts-item h2 {
+	font: 700 72px/1 'Montserrat', sans-serif;
+	color: #fff;
+	margin-bottom: 18px;
+}
+
+.facts-sect .facts-item p {
+	font: 14px/1 'Montserrat', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.service-sect .service-item {
+	padding: 47px 0;
+}
+
+.service-sect .service-item-box h4 {
+	font: 14px/1 'Montserrat', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	/*ВОПРОС! Это не похоже на regular.*/
+}
+
+.service-sect .service-item-box p {
+	font: 15px/1.6 'Roboto', sans-serif;
+	color: #999999;
+}
+
+.service-sect .service-item-box {
+	display: inline-block;
+	width: calc(100% - 37px);
+	box-sizing: border-box;
+	padding: 0 25px;
+	/*ВОПРОС! Почему 37px а не 32px?*/
+}
+
+.service-sect .service-line {
+	width: 100%;
+	height: 1px;
+	background-color: #e5e5e5;
+}
+
+.features-sect {
+	background-image: url(../images/features-sect/bg-pic.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.features-sect .features-pict-box {
+	position: relative;
+}
+
+.features-sect .features-pict-box img {
+	display: block;
+	margin: 0 auto;
+}
+
+.features-sect .features-pict-box img:nth-child(2n) {
+	position: absolute;
+	top: 198px;
+	left: 56%;
+}
+
+.service-2-sect .service-2-pict-box {
+	text-align: center;
+}
+
+.service-2-sect .service-2-pict-box img {
+	width: 100%;
+	max-width: 570px;
+	height: 100%;
+	max-height: 570px;
+}
+
+
+
+.service-2-sect .service-2-box-item {
+	vertical-align: baseline;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 12px;
+	clear: both;
+	/*ВОПРОС! Почему valign не перебивает reset?*/
+}
+
+.service-2-sect .service-2-box-item .icon-frame {
+	display: inline-block;
+	width: 58px;
+	height: 58px;
+	text-align: center;
+}
+
+.service-2-sect .service-2-box-item .icon-frame img {
+	margin-top: 14px;
+}
+
+.service-2-sect .service-2-box-item h3 {
+	display: inline-block;
+	font: 500 14px/58px 'Montserrat', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.service-2-sect .service-2-box-item img.arrow {
+	float: right;
+	padding: 23px 14px 0 0;
+
+}
+
+.service-2-sect .active:after {
+	content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ";
+	display: block;
+	font: italic 300 15px/1.6 'Roboto', cursive;
+	color: #999999;
+	border-top: 1px solid #e5e5e5;
+	padding: 10px 18px 18px;
+}
+
+.quote-sect {
+	background-color: #f8f8f8;
+}
+
+.quote-sect .quote-cont {
+	display: flex;
+	justify-content: center;
+	padding: 70px 15px;
+}
+
+.quote-sect .quote-img {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 41px 40px;
+	border: 3px solid #95e1d3;
+	margin-right: 60px;
+	margin-left: 30px;
+}
+
+/*ВОПРОС! Неправильно выставляется ширина в px и % для .quote-img-box*/
+
+.quote-sect .quote-main {
+	padding: 0 7%;
+	display: flex;
+}
+
+.quote-sect .quote-text-box {
+	align-self: center;
+}
+
+.quote-sect .quote-arrow {
+	margin: auto 0;
+}
+
+.quote-sect .quote-arrow img {
+	cursor: pointer;
+}
+
+.quote-sect .quote-main p {
+	font: italic 300 24px/1.5 'Roboto', cursive;
+	color: #999999;
+	padding-bottom: 13px;
+}
+
+.quote-sect .quote-main h3 {
+	font: 24px/1 'Kaushan Script', cursive;
+	color: #333333;
+}
+
+.quote-sect .quote-main h3:before {
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin-right: 10px;
+	vertical-align: middle;
+/*ВОПРОС! Float не работает с инлайн-блоками?*/
+}
+
+.team-sect .pict-box-size {
+	max-height: 470px;
+	max-width: 380px;
+	width: 100%;
+	height: 100%;
+}
+
+.team-sect .team-share-menu {
+	display: flex;
+}
+
+.team-sect .team-share-item {
+	width: 56px;
+	height: 56px;
+	border: 1px solid transparent;
+	background-color: #fce38a;
+	display: flex;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.team-sect .team-share-item i {
+	color: #f38181;
+	margin: auto;
+	font-size: 24px;
+}
+
+.team-sect .team-share-item:hover i {
+	color: #fff;
+}
+
+.team-sect .team-share-item:hover {
+	background-color: #f38181;
+}
+
+.team-sect .pict-box-item .pict-box-elem {
+	margin-bottom: 30px;
+}
+
+.team-sect .pict-box-subtitle {
+	text-align: center;
+}
+
+.team-person-descr h3 {
+	font: 600 14px 'Montserrat', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	padding-bottom: 7px;
+} 
+
+.team-person-descr p {
+	font: italic 300 15px/1.6 'Roboto', cursive;
+	color: #999999;
+}
+
+.logos-sect {
+	background-color: #f8f8f8;
+}
+
+.logos-sect .logos-cont {
+	padding: 50px 15px;
+}
+
+.logos-sect .logos-item {
+	text-align: center;
+}
+/*ВОПРОС! Из-за выравнивания, первый и последний элементы
+начинаются не с начала. Как исправить? Кроме флекс-бокса.*/
+
+.logos-sect .logos-item img {
+	max-width: 138px;
+	max-height: 149px;
+	width: 100%;
+	height: 100%;
+}
+/*ВОПРОС! Мне кажется у картинок качество хуже оригинала.*/
+
+.work-sect {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.work-sect .container {
+	padding: 0 15px;
+}
+
+.work-sect .work-pict-box {
+	margin: 0;
+}
+
+.work-sect .pict-box-item {
+	font-size: 0;
+	padding: 0;
+}
+
+.work-sect .pict-box-size {
+    max-height: 390px;
+    max-width: 480px;
+    width: 100%;
+    height: 100%;
+}
+
+.work-sect .pict-box-vertical-item .pict-box-size {
+    max-height: 780px;
+    max-width: 480px;
+    width: 100%;
+    height: 100%;
+}
+
+/*ВОПРОС! Почему белая граница справа при ховере?*/
+
+.work-sect .pict-box-item .pict-box-img-elem:hover {
+    transform: none;
+}
+
+.work-sect .pict-box-text img {
+	margin-bottom: 18px;
+}
+
+.work-sect .pict-box-text h3 {
+	font: 600 14px/1 'Montserrat', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.work-sect .pict-box-text p {
+	font: italic 300 15px/1.6 'Roboto', cursive;
+	color: #fff;
+}
+
+.quote-2-sect {
+	background-color: #fff;
+}
+
+.quote-2-img-box {
+	margin-right: 15px;
+}
+
+.references-sect {
+	background-image: url(../images/references-sect/Layer_53.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.references-sect .references-main-col {
+	font-size: 0;
+}
+
+.references-sect .references-main-box-item {
+	padding-right: 11%;
+	padding-bottom: 45px;
+}
+
+.references-sect .references-img-col {
+	width: 160px;
+	display: inline-block;
+}
+
+.references-sect .references-img-col img {
+	display: block;
+	margin: auto;
+}
+
+.references-sect .references-text-col {
+	font-size: 14px;
+	display: inline-block;
+	width: calc(100% - 160px);
+	padding-top: 10px;
+}
+
+.references-sect .references-text-col p.work-pos:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 16px 0;
+}
+
+.references-sect .references-text-col p.work-ref {
+	font: 15px/1.6 'Roboto', sans-serif;
+	color: #999999;
+}
+
+.blog-sect .blog-item {
+	position: relative;
+}
+
+.blog-sect .blog-item-date-box {
+	background-color: #95e1d3;
+	width: 60px;
+	height: 70px;
+	position: absolute;
+	bottom: 5%;
+	left: -10px;
+}
+
+.blog-sect .blog-item-date-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.blog-sect .blog-item-date-text h3 {
+	font: 700 28px/1 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+.blog-sect .blog-item-date-text p {
+	font: italic 300 15px/1.6 'Roboto', cursive;
+	color: #fff;
+	opacity: .8;
+}
+
+.blog-sect .blog-item-img-cont {
+	position: relative;
+}
+
+.blog-sect .blog-item-img-cont img {
+	max-width: 380px;
+	width: 100%;
+}
+
+.blog-sect .blog-item-text-box {
+	padding: 17px 0;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 17px;
+}
+
+.blog-sect .blog-item-text-box h3 {
+	font: 600 14px 'Montserrat', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.blog-sect .blog-item-text-box p {
+	font: 15px/1.6 'Roboto', sans-serif;
+	color: #999999;
+}
+
+.blog-sect .blog-view-item {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+.blog-sect .blog-view-item img {
+	vertical-align: middle;
+}
+
+.blog-sect .blog-view-item span {
+	font: italic 300 15px/1.6 'Roboto', cursive;
+	color: #999999;
+	vertical-align: middle;
+}
+
+.map-sect {
+	background-image: url(../images/map-sect/bg-im_1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.map-sect .map-cont {
+	padding: 56px 15px;
+}
+
+.map-sect .map-head-box {
+	text-align: center;
+}
+
+.map-sect .map-head-box img {
+	padding-bottom: 15px;
+}
+
+.map-sect .map-head-box a {
+	text-decoration: none;
+	display: block;
+}
+
+.map-sect .map-head-box span {
+	font: 700 24px 'Montserrat', sans-serif;
+	color: #f38181;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.map-sect .map-head-box a:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 18px auto 0;
+}
+
+.footer-sect {
+	background-color: #f8f8f8;
+}
+
+.footer-sect .follow-descr-cont {
+	padding-right: 22px;
+}
+
+.footer-sect .follow-descr-cont h2 {
+	font: 700 46px/1 'Montserrat', sans-serif;
+	color: #cccccc;
+	margin-bottom: 36px;
+}
+
+.footer-sect .follow-descr-cont p.follow-descr-text {
+	font: 15px/1.6 'Roboto', sans-serif;
+	color: #999999;
+	margin-bottom: 34px;
+}
+
+.footer-sect .follow-descr-cont .followers {
+	font: 600 14px 'Montserrat', sans-serif;
+	color: #333333;
+	margin-bottom: 18px;
+}
+
+.footer-sect .follow-descr-cont .followers span {
+	font: 700 22px 'Montserrat', sans-serif;
+	vertical-align: baseline;
+	padding-right: 4px; 
+}
+
+.footer-sect .follow-descr-cont .follow-us-box {
+	border-top: 1px solid #e5e5e5;
+	padding: 15px 0 23px;
+	line-height: 30px;
+}
+
+.footer-sect .follow-descr-cont .follow-us-box span {
+	font: italic 300 15px/1.6 'Roboto', cursive;
+	color: #999999;
+	padding-right: 20px;
+}
+
+.footer-sect .follow-descr-cont .follow-us-box a {
+	font-size: 18px;
+	color: #95e1d3;
+	margin-right: 14px;
+	text-decoration: none;
+}
+
+.footer-sect .follow-descr-cont .follow-us-box i {
+	transition: all .3s;
+}
+
+.footer-sect .follow-descr-cont .follow-us-box i:hover{
+	transform: scale(1.2);
+	color: #f38181;
+}
+
+.footer-sect .follow-descr-cont form {
+	font-size: 0;
+}
+
+.footer-sect .follow-descr-cont form label.email {
+	display: inline-block;
+	width: 50%;
+	min-width: 153px;
+}
+
+.footer-sect .follow-descr-cont form label.submit {
+	display: inline-block;
+}
+
+.footer-sect .follow-descr-cont form input[type="email"] {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e7e7e7;
+	height: 40px;
+	padding: 0 13px;
+}
+
+.footer-sect .follow-descr-cont form input[type="submit"] {
+	display: block;
+	width: 100%;
+	background-color: #95e1d3;
+	color: #fff;
+	border: none;
+	font: 700 14px 'Montserrat', sans-serif;
+	padding: 0 34px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.footer-sect .follow-descr-cont form input[type="submit"]:hover {
+	opacity: .8;
+}
+
+.footer-sect .follow-descr-cont form input::-webkit-input-placeholder {
+	font: italic 300 15px 'Roboto', cursive;
+	color: #cccccc;
+}
+
+.footer-sect .follow-descr-cont form input:-moz-placeholder {
+	font: italic 300 15px 'Roboto', cursive;
+	color: #cccccc;
+}
+
+.footer-sect .follow-blogs-cont {
+	padding-top: 10px;
+}
+
+.footer-sect .follow-blogs-cont > p {
+	font: 600 14px 'Montserrat', sans-serif;
+	color: #333333;
+	margin-bottom: 38px;
+}
+
+.footer-sect .follow-blogs-item {
+	font-size: 0;
+	margin-bottom: 30px;
+	display: flex;
+	text-decoration: none;
+}
+
+.footer-sect .follow-blogs-img {
+	transition: all .3s;
+}
+
+.footer-sect .follow-blogs-item:hover .follow-blogs-img {
+	transform: scale(1.07);
+}
+
+.footer-sect .follow-blogs-text {
+	display: inline-block;
+	width: calc(100% - 120px);
+	box-sizing: border-box;
+	padding-top: 3px;
+	padding-left: 5%;
+	margin: auto 0;
+}
+
+.footer-sect .follow-blogs-text h3 {
+	font: 600 12px/1.5 'Montserrat', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.footer-sect .follow-blogs-text p {
+	font: italic 300 13px/1.84 'Roboto', cursive;
+	color: #999999;
+}
+
+.footer-sect .insta-pict-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-sect .insta-cont {
+	padding-top: 10px;
+	padding-left: 25px;
+}
+
+.footer-sect .insta-cont > p {
+	font: 600 14px 'Montserrat', sans-serif;
+	color: #333333;
+	margin-bottom: 38px;
+}
+
+.footer-sect .insta-pict-item {
+	display: block;
+	border: 1px solid transparent;
+	transition: all .3s;
+}
+
+.footer-sect .insta-pict-item:hover {
+	transform: scale(1.07);
+}
+
+.copyright-sect {
+	background-color: #f8f8f8;
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+}
+
+.copyright-sect .copyright-cont {
+	padding: 23px 0;
+}
+
+.copyright-sect p {
+	font: 500 14px 'Montserrat', sans-serif;
+	color: #333333;
+}
+
+.copyright-sect a {
+	text-decoration: none;
+	color: #f38181;
+	vertical-align: baseline;
+}
